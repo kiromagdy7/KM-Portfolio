@@ -1,131 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>KM-Portfolio</title>
-    <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="icon" href="Materials/00.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kirollos Magdy</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="https://kiromagdy.com/" />
+<meta http-equiv="refresh" content="3;url=https://kiromagdy.com/" />
+<style>
+  :root {
+    --accent: #2563EB;
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --text: #F5F5F5;
+    --muted: #8A8A8A;
+    --border: #262626;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+  }
+  .label {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    font-family: 'Courier New', monospace;
+    margin-bottom: 16px;
+    display: block;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+  p strong { color: var(--text); }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px 20px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+  }
+  .btn:hover { opacity: 0.88; }
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 24px;
+  }
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+  .dot:nth-child(2) { animation-delay: 0.2s; }
+  .dot:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.25; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .dot { animation: none; opacity: 0.6; }
+  }
+</style>
 </head>
-
 <body>
-    <header class="header-container">
-        <article class="avatar-container">
-            <h2>Kirollos Magdy</h2>
-            <img src="Materials/1.png" alt="Avatar" class="avatar">
-            <h3>Front-End Developer</h3>
-            <p>I'm a dedicated <b class="special-text">web developer</b> with a passion for
-                crafting
-                visually striking
-                <br>highly functional websites that deliver exceptional user experiences.
-            </p>
-            <div>
-                <h4 class="Contact-text">Contact Me :</h4>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/kiromagdy11?locale=ar_AR" target="_blank"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/+201270200486" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/kiromagdy_7/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/kiromagdy77" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/kirollos-magdy-1102a1278/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="sec-img">
-            <img src="Materials/SVG1.svg" alt="">
-        </article>
-    </header>
-    <div>
-        <hr>
+  <div class="card">
+    <span class="label">// Portfolio Moved</span>
+    <h1>This portfolio has a new home</h1>
+    <p>You're viewing an old version of my portfolio. It now lives at <strong>kiromagdy.com</strong>. Redirecting you automatically&hellip;</p>
+    <a class="btn" href="https://kiromagdy.com/">Go to kiromagdy.com →</a>
+    <div class="dots" aria-hidden="true">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
-    <section>
-        <div>
-            <h2>
-                <h3 class="Projects-title">My Projects</h3>
-            </h2>
-        </div>
-        <h5 class="Projects-Sec-T">HTML & CSS</h5>
-        <article class="projects-container">
-            <div  class="projects-cards">
-                <a href="https://kiromagdy77.github.io/KiroM-Store/" target="_blank">
-                    <img src="Materials/MakoStore P2.png" alt="project 1">
-                </a>
-                <p class="card-title">Mako Store</p>
-                <p class="card-description">Online store for<br>Electronics & more</p>
-            </div>
-            <div class="projects-cards">
-                <a href="https://kiromagdy77.github.io/Cook-Chef.KiroMagdy/" target="_blank">
-                    <img src="Materials/CookChef P1.png" alt="project 2">
-                </a>
-                <p class="card-title">Cook Chef</p>
-                <p class="card-description">Mexican Restaurant</p>
-            </div>
-            <div class="projects-cards">
-                <a href="#">
-                    <img src="Materials/DivStore P3.svg" alt="project 3">
-                </a>
-                <p class="card-title">Div Store</p>
-                <p class="card-description">E-commerce website<br>for Electronics</p>
-            </div>
-                                <!------------------------->
-
-        </article>
-        <h5 class="Projects-Sec-T">JavaScript</h5>
-        <article class="projects-container">
-            <div  class="projects-cards">
-                <a href="#">
-                    <img src="Materials/STAY-Tuned.svg" alt="project 1">
-                </a>
-                <p class="card-title">Project</p>
-                <p class="card-description">Soooon</p>
-            </div>
-            <div class="projects-cards">
-                <a href="#">
-                    <img src="Materials/STAY-Tuned.svg" alt="project 2">
-                </a>
-                <p class="card-title">Project</p>
-                <p class="card-description">Soooon</p>
-            </div>
-            <div class="projects-cards">
-                <a href="#">
-                    <img src="Materials/STAY-Tuned.svg" alt="project 3">
-                </a>
-                <p class="card-title">Project</p>
-                <p class="card-description">Soooon</p>
-            </div>
-
-        </article>
-                                <!------------------------->
-
-        <h5 class="Projects-Sec-T">React</h5>
-        <article class="projects-container">
-            <div  class="projects-cards">
-                <a href="#">
-                    <img src="Materials/STAY-Tuned.svg" alt="project 1">
-                </a>
-                <p class="card-title">Project</p>
-                <p class="card-description">Soooon</p>
-            </div>
-            <div class="projects-cards">
-                <a href="#">
-                    <img src="Materials/STAY-Tuned.svg" alt="project 2">
-                </a>
-                <p class="card-title">Project</p>
-                <p class="card-description">Soooon</p>
-            </div>
-            <div class="projects-cards">
-                <a href="#">
-                    <img src="Materials/STAY-Tuned.svg" alt="project 3">
-                </a>
-                <p class="card-title">Project</p>
-                <p class="card-description">Soooon</p>
-            </div>
-        </article>
-    </section>
+  </div>
 </body>
-
 </html>
